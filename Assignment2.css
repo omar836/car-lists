@@ -1,0 +1,15 @@
+/* styles.css */
+
+/* Styles for outer lists */
+ol.outer-list { list-style-type: upper-roman; }
+
+/* Original background colors and padding */
+.compact { background-color: pink; padding: 8px; }
+.midsize { background-color: lightblue; padding: 8px; }
+.sports { background-color: lightcoral; padding: 8px; }
+
+/* Middle lists styling */
+ol.middle-list { list-style-type: upper-alpha; }
+
+/* Inner lists styling */
+ol.inner-list { list-style-type: decimal; font-weight: bold; }

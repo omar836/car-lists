@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Ordered Lists of Cars</title>
+    <link rel="stylesheet" href="./Assignment2.css">
+    <!-- Internal Style Sheet -->
+    <style>
+        /* Styles for outer lists */
+        ol.outer-list { list-style-type: upper-roman; }
+
+        /* Different background colors and font styles */
+        .compact { background-color: lightpink; font-family: Arial, sans-serif; }
+        .midsize { background-color: lightyellow; font-family: Georgia, serif; }
+        .sports { background-color: lightgreen; font-family: Verdana, sans-serif; }
+
+        /* Middle lists styling */
+        ol.middle-list { list-style-type: upper-alpha; }
+
+        /* Inner lists styling */
+        ol.inner-list { list-style-type: decimal; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>Car Categories</h1>
+
+    <!-- Outer List -->
+    <ol class="outer-list">
+        <!-- Compact Cars -->
+        <li class="compact">
+            <span>Compact Cars</span>
+            <ol class="middle-list">
+                <!-- Two Door Compact -->
+                <li>Two Door
+                    <ol class="inner-list">
+                        <li>Honda Civic</li>
+                        <li>Ford Fiesta</li>
+                        <li>Chevrolet Spark</li>
+                    </ol>
+                </li>
+                <!-- Four Door Compact -->
+                <li>Four Door
+                    <ol class="inner-list">
+                        <li>Toyota Corolla</li>
+                        <li>Nissan Sentra</li>
+                        <li>Hyundai Elantra</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <!-- Midsize Cars -->
+        <li class="midsize">
+            <span>Midsize Cars</span>
+            <ol class="middle-list">
+                <!-- Two Door Midsize -->
+                <li>Two Door
+                    <ol class="inner-list">
+                        <li>Ford Mustang</li>
+                        <li>Chevrolet Malibu</li>
+                        <li>Dodge Charger</li>
+                    </ol>
+                </li>
+                <!-- Four Door Midsize -->
+                <li>Four Door
+                    <ol class="inner-list">
+                        <li>Toyota Camry</li>
+                        <li>Honda Accord</li>
+                        <li>Nissan Altima</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <!-- Sports Cars -->
+        <li class="sports">
+            <span>Sports Cars</span>
+            <ol class="middle-list">
+                <!-- Coupe Sports -->
+                <li>Coupe
+                    <ol class="inner-list">
+                        <li>Chevrolet Corvette</li>
+                        <li>BMW M4</li>
+                        <li>Porsche 911</li>
+                    </ol>
+                </li>
+                <!-- Convertible Sports -->
+                <li>Convertible
+                    <ol class="inner-list">
+                        <li>Mazda MX-5 Miata</li>
+                        <li>Mercedes-Benz SL</li>
+                        <li>Audi TT</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>
